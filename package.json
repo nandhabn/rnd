@@ -1,0 +1,23 @@
+{
+  "name": "rnd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "tunnel": "rm -rf ssh-tunnel/dist && tsc --outDir ssh-tunnel/dist && node ssh-tunnel/dist",
+    "tunnel:dev": "nodemon -e ts --exec \"npm run tunnel\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "tunnel-ssh": "5.0.5"
+  },
+  "devDependencies": {
+    "@types/tunnel-ssh": "5.0.0",
+    "typescript": "5.0.4"
+  }
+}
